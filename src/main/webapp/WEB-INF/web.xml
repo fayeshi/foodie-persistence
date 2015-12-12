@@ -1,0 +1,141 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <display-name>Foodie Persistence Application</display-name>
+
+    <servlet>
+        <servlet-name>Chef Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.ChefServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Chef Servlet</servlet-name>
+        <url-pattern>/chefs</url-pattern>
+    </servlet-mapping>
+
+    // Chef1Servlet
+
+    <servlet>
+        <servlet-name>Chef1 Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.Chef1Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Chef1 Servlet</servlet-name>
+        <url-pattern>/chefs/*</url-pattern>
+    </servlet-mapping>
+
+    // DishServlet
+
+    <servlet>
+        <servlet-name>Dish Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.DishServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dish Servlet</servlet-name>
+        <url-pattern>/dishes</url-pattern>
+    </servlet-mapping>
+
+    // Dish1Servlet
+
+    <servlet>
+        <servlet-name>Dish1 Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.Dish1Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dish1 Servlet</servlet-name>
+        <url-pattern>/dishes/*</url-pattern>
+    </servlet-mapping>
+
+    // Dish Category Servlet
+
+    <servlet>
+        <servlet-name>Dish Category Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.DishCategoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dish Category Servlet</servlet-name>
+        <url-pattern>/dishes/category/*</url-pattern>
+    </servlet-mapping>
+
+    // Order Servlet
+
+    <servlet>
+        <servlet-name>Order Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Order Servlet</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+
+    // Order1 Servlet
+
+    <servlet>
+        <servlet-name>Order1 Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.Order1Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Order1 Servlet</servlet-name>
+        <url-pattern>/orders/*</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    // Review Servlet
+
+    <servlet>
+        <servlet-name>Post Review Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.ReviewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Post Review Servlet</servlet-name>
+        <url-pattern>/reviews</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Review By Dish Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.ReviewByDishServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Review By Dish Servlet</servlet-name>
+        <url-pattern>/reviews/dishes/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Review By Chef Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.ReviewByChefServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Review By Chef Servlet</servlet-name>
+        <url-pattern>/reviews/chefs/*</url-pattern>
+    </servlet-mapping>
+
+    // authentication
+    <servlet>
+        <servlet-name>Authenticate Servlet</servlet-name>
+        <servlet-class>edu.cmu.team17.servlet.AuthenticationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Authenticate Servlet</servlet-name>
+        <url-pattern>/authenticate</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
